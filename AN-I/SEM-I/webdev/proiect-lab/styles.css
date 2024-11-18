@@ -1,0 +1,47 @@
+html, body {
+    overflow: hidden;  
+    height: 100%;      
+    margin: 0;         
+    padding: 0;        
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    height: 100vh;             
+    width: 100vw;                    
+}
+
+.bookshelf {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     background: red;
+     width: 40%;
+}
+
+.sigmabs {
+    width: 120%;
+    height: auto;
+    align-self: center;
+    position: absolute;
+}
+
+.safe {
+    width: 80%;
+    height: auto;
+    position: relative; 
+}
+
+.griddy {
+    width: 87%;
+    left:3.5vw;
+    margin-top: 17vh;
+    height: 80%;
+    
+    display: grid;
+    position: absolute;
+    grid-template: 24vh 23vh 8vh/ 1fr 1fr 1fr;
+}
+
