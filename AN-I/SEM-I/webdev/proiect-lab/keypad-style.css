@@ -1,0 +1,45 @@
+html, body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;  
+    height: 100%;      
+    margin: 0;         
+    padding: 0;        
+}
+
+
+.kpadfull{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.keys{
+	width: 80%;
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+	column-gap: 3vw;
+}
+
+.btn{
+	height: 15vh;
+	width: 15vh;
+}
+
+#special.btn{
+	position: relative;
+	align-self: center;
+}
+
+*[name="kscreen"]{
+	font-family: "Digital-7", monospace;
+	font-size: 10vh;
+	width: 28vw;
+	height: 10vh;
+	border: 10px solid black;
+	text-align: center;
+	caret-color: transparent;
+	outline: none;
+}

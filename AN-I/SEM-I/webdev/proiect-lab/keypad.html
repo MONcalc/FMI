@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<meta name="viewport" 
+      content="width=device-width/">
+	<link rel="stylesheet" href="keypad-style.css">
+	<script type="text/javascript" src="script-keypad.js" defer></script>
+	<title>Keypad</title>
+
 </head>
+
 <body>
-	<div>lorem keypad</div>
+	<input type="tel" name="kscreen" inputmode="numeric" 
+	placeholder="Code?" maxlength="6" autofocus>
+	<div class="kpadfull">
+		<div class = "keys">
+			<img src="circle.png" class="btn" val="1">
+			<img src="circle.png" class="btn" val="2">
+			<img src="circle.png" class="btn" val="3">
+
+			<img src="circle.png" class="btn" val="4">
+			<img src="circle.png" class="btn" val="5">
+			<img src="circle.png" class="btn" val="6">
+
+			<img src="circle.png" class="btn" val="7">
+			<img src="circle.png" class="btn" val="8">
+			<img src="circle.png" class="btn" val="9">
+		</div>
+	</div>
+	<img src="circle.png" class="btn" id="special" val="0">
 </body>
 </html>
