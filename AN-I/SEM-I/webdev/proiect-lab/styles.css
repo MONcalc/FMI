@@ -17,7 +17,6 @@ html, body {
      align-items: center;
      justify-content: center;
      position: relative;
-     background: red;
      width: 40%;
 }
 
@@ -45,3 +44,7 @@ html, body {
     grid-template: 24vh 23vh 8vh/ 1fr 1fr 1fr;
 }
 
+.delted{
+    pointer-events: none;
+    opacity: 0;
+}

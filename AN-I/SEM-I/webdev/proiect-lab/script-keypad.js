@@ -1,11 +1,14 @@
 const btns = document.querySelectorAll('.btn');
-console.log("Tried safe" + localStorage.getItem('tried'));
+const scrn = document.querySelector('*[name="kscreen"]');
+
+function isDigit(char) {
+  return !isNaN(parseInt(char));
+}
 
 btns.forEach(btn => {
   btn.addEventListener('click', () => {
     
     const value = btn.getAttribute("val");
-    const scrn = document.querySelector('*[name="kscreen"]')
     const lim = scrn.getAttribute('maxlength');
 
     if(scrn.value.length + value.length <= lim)
@@ -16,9 +19,10 @@ btns.forEach(btn => {
 });
 
 document.addEventListener('keydown', (event) => {
-    if (event.keyCode === 13) {
-        const scrn = document.querySelector('*[name="kscreen"]');
-        localStorage.setItem("their_code", scrn.value);
-        scrn.value = ''; window.location.href = "base.html";
-    }
+    if (event.keyCode === 13) 
+        window.location.href = "base.html?" + scrn.value; 
+});
+
+scrn.addEventListener('input', () => {
+  scrn.value = scrn.value.replace(/\D/g, '');
 });
