@@ -1,10 +1,6 @@
 const btns = document.querySelectorAll('.btn');
 const scrn = document.querySelector('*[name="kscreen"]');
 
-function isDigit(char) {
-  return !isNaN(parseInt(char));
-}
-
 btns.forEach(btn => {
   btn.addEventListener('click', () => {
     
