@@ -36,15 +36,33 @@ html, body {
 .griddy {
     width: 87%;
     left:3.5vw;
-    margin-top: 17vh;
+    margin-top: 10vh;
     height: 80%;
     
     display: grid;
     position: absolute;
-    grid-template: 24vh 23vh 8vh/ 1fr 1fr 1fr;
+    grid-template: 27vh 25vh 8vh/ 1fr 1fr 1fr;
 }
 
 .delted{
     pointer-events: none;
     opacity: 0;
+}
+
+.Shake{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake{
+    0%, 100% {
+        transform: transalteX(0);
+    }
+
+    25% {
+        transform: translateX(-1vw);
+    }
+
+    75% {
+        transform: translateX(1vw);
+    }
 }
