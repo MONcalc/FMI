@@ -12,6 +12,13 @@ function getCode(url){
           return url.substr(i + 1, url.length);
 }
 
+function resetGif(id) {
+    var img = document.getElementById(id);
+    var imageUrl = img.src;
+    img.src = "";
+    img.src = imageUrl;
+}
+
 function del(ele, rev){
 	if(!ele) return;
 	if(!rev) ele.classList.add("delted");
