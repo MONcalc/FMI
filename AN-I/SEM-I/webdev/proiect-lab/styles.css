@@ -8,6 +8,7 @@ html, body {
 .room {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     height: 100vh;             
     width: 100vw;                    
 }
@@ -44,6 +45,34 @@ html, body {
     grid-template: 27vh 25vh 8vh/ 1fr 1fr 1fr;
 }
 
+.cat {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.kittens {
+    height: 50vh;
+    width: auto;
+}
+
+
+.problembook {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.book {
+    position: absolute;
+    animation: SusJos 3s ease-in-out infinite;
+    width: 35%;
+    height: 25%;
+}
+
 .delted{
     pointer-events: none;
     opacity: 0;
@@ -66,3 +95,18 @@ html, body {
         transform: translateX(1vw);
     }
 }
+
+@keyframes SusJos {
+    0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-8vh); /* Float up */
+  }
+  100% {
+    transform: translateY(0); /* Back to start */
+  }
+
+}
+
+.

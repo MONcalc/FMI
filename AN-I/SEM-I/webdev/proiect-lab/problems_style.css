@@ -1,0 +1,81 @@
+html, body {
+    overflow: hidden;  
+    height: 100%;      
+    margin: 0;         
+    padding: 0;        
+}
+
+.problems {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    top: 3vh;
+    left: 3vh;
+    z-index: 11;
+}
+
+.menu {
+    position: absolute;
+    height: 100vh;
+    width: 20vw;
+    left: -25vw;
+    border: 0.3vw solid black;
+    border-top: none;
+    border-left: none;
+    transition: left 0.8s ease;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.buton {
+    width: 10vw;
+    height: 20 vh;
+
+    align-self: center;
+}
+
+.problem-text {
+    padding: 1vw;
+    font-family: "Latin Modern Math";
+    font-size: 25px;
+}
+
+.griddy {
+    width: 60vw;
+    height: 80vh;
+    margin-top: 10vh;
+    
+    display: grid;
+    position: absolute;
+    grid-template: 27vh 25vh 8vh/ 1fr 1fr 1fr;
+}
+
+.question {
+    height: 20vh;
+    width: 20vw;
+}
+
+.statement-container {
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    border: 1vw solid black;
+    z-index: 8;
+}
+
+.hidden {
+    display: none;
+    z-index: -1
+}
+
+

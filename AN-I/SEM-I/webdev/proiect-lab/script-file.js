@@ -1,4 +1,5 @@
 const safes = document.querySelectorAll(".safe");
+const book = document.querySelector(".book")
 console.log(opened);
 var cnt = 0;
 
@@ -42,10 +43,14 @@ if(tried != null){
 localStorage.setItem("opened", JSON.stringify(opened));
 
 safes.forEach(safe => {
-  safe.addEventListener('click', () => {
-    const ego =  safe.getAttribute('id');
+  safe.addEventListener("click", () => {
+    const ego =  safe.getAttribute("id");
     
     localStorage.setItem("tried", ego);
     window.location.href = "keypad.html";
   });
 })
+
+book.addEventListener("click", () => {
+    window.location.href = "problems.html"
+});
