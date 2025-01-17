@@ -3,8 +3,9 @@
 
 #!/bin/bash
 
-export wkFIFO="/home/rooted/Documents/FIFO"
+user=$(whoami)
+
+export wkFIFO="/home/$user/Documents/FIFO"
 mkfifo "$wkFIFO"; mkdir "/tmp/server-replies"
 
 ./server.sh &
-
